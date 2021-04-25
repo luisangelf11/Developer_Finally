@@ -1,0 +1,475 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Style of my menu*/
+
+header{
+    height: 635px;
+    background-image: url("./Imgs/header.png");
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    color: rgb(0, 59, 114);
+    border-radius: 0 0 25% 0%;
+}
+
+header label{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#ckVisible{
+    display: none;
+}
+
+.zone{
+    width: 600px;
+    height:170px;
+    margin:100px 100px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(235, 235, 235, 0.678);
+}
+
+.description{
+    font-size: 18px;
+    padding: 10px;
+    color: rgb(10, 31, 88);
+}
+
+.description i{
+    margin-right: 5px;
+}
+
+.login{
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    display: block;
+    background-color: red;
+    border-radius: 45px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.login:hover{
+    transition:all 0.5s ease-in-out;
+    background-color: rgba(255, 0, 0, 0.521);
+}
+
+.title{
+    padding: 10px;
+    font-size: 35px;
+    color: rgb(10, 31, 88);
+}
+
+.logotype{
+    width:290px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    background-color:transparent;
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    position: relative;
+}
+
+.here{
+    color: rgb(0, 59, 114);
+}
+
+.menu a{
+    display: block;
+    padding: 15px 10px;
+    color: rgb(88, 103, 240);
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.menu a:hover{
+    transition: 0.5s all ease-in-out;
+    color: rgb(0, 59, 114);
+}
+
+.menu a i{
+    margin-left: 10px;
+}
+
+#right{
+    margin-right: 2px;
+}
+
+.submenu a i{
+    margin-right: 5px;
+}
+
+.submenu{
+    display: none;
+    width: 130%;
+    position: absolute;
+    background-color: rgba(180, 203, 245, 0.521);
+    border-radius: 5px;
+}
+
+/*Footer*/
+
+.subfooter{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    background-color: #499DDA;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(75, 86, 177);
+}
+
+.Box-left{
+    width:500px;
+    height: 300px;
+    margin-left: 25px;
+}
+
+.Box-left h3{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
+
+.Box-left p{
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.Box-Center{
+    width:300px;
+    height: 400px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Box-Center h3{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
+
+.Box-Center a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.Box-Center a:hover{
+    transition: all 0.5s ease-in-out;
+    color:rgb(10, 31, 88) ;
+}
+
+.Box-right{
+    width: 300px;
+    height: 400px;
+    margin-left: 25px;
+}
+
+.Box-right h3{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
+
+.subBoxRight{
+    width: 100%;
+    height:100px;
+    display: flex;
+}
+
+.subBoxRight p{
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.iconFooter{
+    width: 50px;
+    height: 50px;
+}
+
+#iconNetwork{
+    margin-right: 5px;
+}
+
+.Box-Button{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Box-Button p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 20px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.Box-Button a{
+    text-decoration: none;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 20px;
+    color: #fff;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:768px) {
+    
+    header{
+        height:300px;
+        background-size: cover;
+        justify-content: center;
+    }
+
+    header label{
+        display: block;
+        padding: 10px;
+        margin-left: 450px;
+    }
+
+    .zone{
+        margin: auto;
+    }
+
+    .logotype{
+        display: none;
+    }
+
+    nav{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height:100%;
+        z-index:10;
+        display: block;
+        background-color:rgb(85, 157, 216);
+        transform: translateX(-100%);
+        transition: all 0.5s ease-in-out;
+        overflow: scroll;
+    }
+
+    .zone{
+        width: 400px;
+        height:180px;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(235, 235, 235, 0.678);
+    }
+    
+    .description{
+        font-size: 16px;
+        padding: 10px;
+        color: rgb(10, 31, 88);
+    }
+    
+    .login{
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+        display: block;
+        background-color: red;
+        border-radius: 45px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .menu li{
+        position: none;
+    }
+
+    .menu a{
+        color: #fff;
+    }
+
+    .menu li:hover .submenu{
+        display: none;
+        position: static;
+    }
+
+    .submenu{
+        background-color:rgb(138, 191, 243);
+        border-radius:  0px;
+        width: 100%;
+        position: static;
+    }
+
+    .title{
+        padding: 10px;
+        font-size: 25px;
+        color: rgb(10, 31, 88);
+    }
+
+    .menu{
+        display: block;
+    }
+
+    #ckVisible:checked ~ nav{
+        transform: translateX(0%);
+    }
+
+    /*footer*/
+
+    .subfooter{
+        width: 483px;
+        height: 750px;
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        background-color: #499DDA;
+    }
+    
+    footer{
+        width: 483px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(75, 86, 177);
+    }
+
+    .Box-left{
+        width:450px;
+        height: 300px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    
+    .Box-left h3{
+        font-size: 25px;
+        color: white;
+        padding: 10px;
+        text-align: justify;
+    }
+    
+    .Box-left p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 10px;
+        line-height: 20px;
+        color: #fff;
+    }
+    
+    .Box-Center{
+        width:300px;
+        height: 400px;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Box-Center h3{
+        font-size: 25px;
+        color: white;
+        padding: 10px;
+        text-align: justify;
+    }
+    
+    .Box-right{
+        width: 300px;
+        height: 400px;
+        margin-left:25px auto;
+    }
+    
+    .Box-right h3{
+        font-size: 25px;
+        color: white;
+        padding: 10px;
+        text-align: justify;
+    }
+    
+    .subBoxRight{
+        width: 100%;
+        height:100px;
+        display: flex;
+    }
+    
+    .subBoxRight p{
+        font-size: 16px;
+        text-align: justify;
+        padding: 10px;
+        line-height: 20px;
+        color: #fff;
+    }
+    
+    .iconFooter{
+        width: 45px;
+        height: 45px;
+    }
+
+    .Box-Button{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Box-Button p{
+        font-size: 15px;
+        text-align: justify;
+        line-height: 20px;
+        margin-left: 5px;
+        color: #fff;
+    }
+    
+    .Box-Button a{
+        text-decoration: none;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 20px;
+        color: #fff;
+    }
+}

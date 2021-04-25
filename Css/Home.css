@@ -1,0 +1,280 @@
+/*Content of information*/
+
+.content{
+    width:100%;
+    height:350px;
+    display: flex;
+    justify-content: center;
+}
+
+.boxInfo{
+    width:700px;
+    height: 250px;
+    padding:0;
+    margin: 50px auto;
+}
+
+.boxInfo h2{
+    font-size: 30px;
+    padding: 5px;
+}
+
+.boxInfo p{
+    display: block;
+    width: 500px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.boxBussines{
+    margin: 50px auto;
+    width:400px;
+    height: 250px;
+    padding: 0;
+}
+
+.boxBussines h3{
+    padding: 5px;
+}
+
+.boxBussines i{
+    margin-right: 10px;
+    font-size: 16px;
+    padding:7px;
+    background-color: #FFAB5E;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Couses VIP*/
+
+.courses{
+    width: 100%;
+    height: 600px;
+    background-image: url("https://www.entreestudiantes.com/wp-content/uploads/2020/04/bruce-mars-FWVMhUa_wbY-unsplash-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.courses h2{
+    width:500px;
+    margin: auto;
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.CBox{
+    width:300px;
+    height:450px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin:50px 25px 0 100px;
+    display: inline-block;
+}
+
+.CBox img{
+    width: 100%;
+    border-radius: 5px;
+    height:400px;
+}
+
+.CBox a{
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px;
+    width:200px;
+    height: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: red;
+    border-radius: 45px;
+    margin:5px 50px ;
+}
+
+.CBox a:hover{
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(255, 0, 0, 0.596);
+}
+
+/*Filosofia empresarial*/
+
+.businessDescription{
+    width: 100%;
+    height:440px;
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+}
+
+.boxTitle{
+    width: 500px;
+    height: 100%;
+}
+
+.boxTitle h2{
+    width: 100%;
+    font-size: 35px;
+    margin: 170px 50px;
+}
+
+.boxFilosofia{
+    width: 700px;
+    height: 100%;
+    border-left: 2px solid #000;
+}
+
+.boxFilosofia h3{
+    padding-left: 20px;
+    padding-top:10px;
+    font-size: 22px;
+}
+
+.boxFilosofia p{
+    line-height: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:768px){
+    
+    .content{
+        height:550px;
+        flex-direction: column;
+    }
+    
+    .boxInfo{
+        width:400px;
+        height: 150px;
+        padding:10px;
+        margin-top: 50px;
+    }
+
+    .boxInfo h2{
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .boxInfo p{
+        display: block;
+        width: 400px;
+        text-align: justify;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .boxBussines{
+        margin-top: 50px;
+        width:400px;
+        height: 380px;
+        padding: 10px;
+    }
+
+    /*Couses VIP*/
+
+    .courses{
+        width: 483px;
+        height: 1400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url("./Imgs/Courses.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .CBox{
+        width:260px;
+        height:500px;
+        background-color: #ffffff;
+        margin:10px auto;
+        border-radius: 5px;
+    }
+
+    .CBox img{
+        width: 100%;
+        height:380px;
+        border-radius: 5px;
+    }
+
+    .CBox a{
+        display: block;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px;
+        width:140px;
+        height: 25px;
+        text-align: center;
+        color: #ffffff;
+        background-color: red;
+        border-radius: 45px;
+        margin:5px 60px ;
+    }
+    .courses h2{
+        width:300px;
+        margin: auto;
+        text-align: center;
+        font-size: 28px;
+        border-bottom: 2px solid #ffffff;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    /*Filosofia empresarial*/
+
+    .businessDescription{
+        width: 483px;
+        height:800px;
+        margin-top:0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .boxTitle{
+        margin:0 25px 0 ;
+        width: 400px;
+        height: 50px;
+    }
+    
+    .boxTitle h2{
+        margin:0 25px 0;
+        width:400px;
+        height: 50px;
+        font-size: 35px;
+    }
+    
+    .boxFilosofia{
+        width: 400px;
+        height: 650px;
+        margin-left:25px;
+        margin-top: 45px;
+        border-left: 0px solid #000;
+        border-top:2px solid #000;
+    }
+    
+    .boxFilosofia h3{
+        padding-left: 20px;
+        padding-top:10px;
+        font-size: 22px;
+    }
+    
+    .boxFilosofia p{
+        line-height: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 18px;
+        text-align: justify;
+    }
+}

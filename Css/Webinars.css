@@ -1,0 +1,143 @@
+.webinar{
+    width: 100%;
+    height:500px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.wb{
+    width:500px;
+    height: 100%;
+}
+
+.wb h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.wb h3{
+    font-weight: 550;
+    padding: 5px;
+}
+
+.wb p{
+    text-align: justify;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.nextWb{
+    width:500px;
+    height:100%;
+    margin-left: 50px;
+}
+
+.nextWb figure{
+    width: 100%;
+    height:400px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.nextWb figure img{
+    width: 100%;
+    height:100%;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    background-color: rgba(65, 105, 225, 0.432);
+    width: 100%;
+    height: 100%;
+}
+
+.capa h3{
+    color:#fff;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.capa p{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    margin: 100px auto;
+    display: block;
+    width: 350px;
+    text-align: center;
+}
+
+.bntEnter{
+    width: 100%;
+    height:50px;
+}
+
+.bntEnter a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin:10px auto;
+    font-size: 17px;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(226, 88, 64);
+    border-radius: 10px;
+}
+
+.bntEnter a:hover{
+    transition: all 0.6s ease-in-out;
+    background-color: rgb(253, 108, 108);
+}
+
+/*Responsive design*/
+
+@media screen and (max-width:768px) {
+    .webinar{
+        width: 480px;
+        height:920px;
+        margin-top: 20px;
+        display: block;
+    }
+    
+    .wb{
+        width:400px;
+        height: 500px;
+        margin-left: 50px;
+    }
+
+    .nextWb{
+        width:400px;
+        height:400px;
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+    
+    .nextWb figure{
+        width: 100%;
+        height:300px;
+        position: relative;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .capa h3{
+        color:#fff;
+        font-size: 22px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .capa p{
+        color: rgb(255, 255, 255);
+        font-size: 19px;
+        margin: 80px auto;
+        display: block;
+        width: 350px;
+        text-align: center;
+    }
+}

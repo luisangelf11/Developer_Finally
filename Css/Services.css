@@ -1,0 +1,88 @@
+.titleServices{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.services{
+    width: 100%;
+    height:250px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+figure{
+    width: 350px;
+    height:250px;
+    margin-left: 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.capa{
+    background-color: rgba(65, 105, 225, 0.486);
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:100%;
+    opacity:0;
+    visibility: hidden;
+    text-align: center;
+    transition: all 500ms ease-out;
+}
+
+.capa h3{
+    color: #fff;
+    font-size: 20px;
+}
+
+.capa p{
+    color: #fff;
+    font-size: 17px;
+    width: 300px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.services figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.services figure:hover > .capa h3{
+    transition: all 0.7s ease-in-out;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+/*Responsive desing*/
+
+@media screen and (max-width:768px){
+    .services{
+        width: 400px;
+        height:800px;
+        display: block;
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+    
+    figure{
+        width: 350px;
+        height:250px;
+        margin-left: 15px;
+        margin-top: 25px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+    }
+}

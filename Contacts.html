@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio-Emprende Hoy</title>
+    <title>Contactos-Emprende Hoy</title>
     <link rel="stylesheet" type="text/css" href="./Css/Style.css">
-    <link rel="stylesheet" type="text/css" href="./Css/Home.css">
+    <link rel="stylesheet" type="text/css" href="./Css/Contact.css">
     <link rel="stylesheet" type="text/css" href="./Css/Up.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -19,7 +19,7 @@
         <input type="checkbox" id="ckVisible">
         <nav>
             <ul class="menu">
-                <li><a href="#"><span class="here"><i id="right" class="fas fa-home"></i> Inicio</a></span></li>
+                <li><a href="Index.html"><i id="right" class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="About.html"><i id="right" class="fas fa-info"></i> Acerca de</a></li>
                 <li><a href="Services.html"><i id="right" class="fas fa-concierge-bell"></i> Servicios</a></li>
                 <li class="subClick"><a href="#"><i id="right" class="fas fa-book-reader"></i> Cursos <i class="fas fa-sort-down"></i></a>
@@ -38,7 +38,7 @@
                         <li><a href="https://www.instagram.com/emprendehoy.site/"><i class="far fa-images"></i> Posts</a></li>
                     </ul>
                 </li>
-                <li><a href="Contacts.html"><i id="right" class="fas fa-id-card"></i> Contactanos</a></li>
+                <li><a href="#"><span class="here"><i id="right" class="fas fa-id-card"></i> Contactanos</span></a></li>
             </ul>
         </nav>
         <img src="./Media/Logo.png" class="logotype">
@@ -49,70 +49,25 @@
             <a href="#" class="login">Inscribete</a>
         </div>
     </header>
-    <!--Box of information-->
-    <section class="content">
-        <div class="boxInfo">
-            <h2>¿Qué es emprende Hoy?</h2>
-            <p>Emprende Hoy es Una Agencia de Marketing Digital y Escuela Online. 
-                Ofrecemos Servicios de Marketing Digital en General , Base de Datos y Programación.               
-                También ofrecemos capacitaciones en base a nuestra Experiencia. 
-                Para que los alumnos puedan aprender todo lo necesario y ponerlo en practico.</p>
-        </div>
-        <div class="boxBussines">
-            <h3><i class="fas fa-trophy"></i>Nuestros servicios</h3>
-            <p>Para contactar nuestros servicios, solo tienes que llenar el formulario de solicitud y nosotros te contactamos.</p>
-            <h3><i class="fas fa-clock"></i>Aprende online a tu propio ritmo</h3>
-            <p>Nuestros Cursos son Pre-Grabados para que el estudiante pueda hacerlo en cualquier horario.</p>
-            <h3><i class="fas fa-certificate"></i>Certificado profesional</h3>
-            <p>Una vez terminado la capacitacion el estudiante debe solicitar su certificado.</p>
-        </div>
-    </section>
     <!--Button up windows-->
     <span class="up">
         <i class="fas fa-sort-up"></i>
     </span>
-    <!--Courses VIP-->
-    <section class="courses">
-        <h2>Cursos más destacados</h2>
-        <div class="CBox">
-            <img src="./Media/PhotoCourses/Python.png">
-            <a href="#">Ver más</a>
-        </div>
-        <div class="CBox">
-            <img src="./Media/PhotoCourses/PosterCursoCSharp.png">
-            <a href="#">Ver más</a>
-        </div>
-        <div class="CBox">
-            <img src="./Media/PhotoCourses/PosterCursoJS.png">
-            <a href="#">Ver más</a>
-        </div>
-    </section>
-    <!--Description of company-->
-    <section class="businessDescription">
-        <div class="boxTitle">
-            <h2>Filosofía Institucional</h2>
-        </div>
-        <div class="boxFilosofia">
-            <h3>Misión</h3>
-            <p>Nuestra misión es llegar a un gran número de alumnos para convertirlos
-                en verdaderos emprendedores por medio de nuestras capacitaciones
-                (cursos, diplomados y recomendaciones de herramientas). 
-                También ofrecerles un servicio de calidad a nuestros clientes.</p>
-            <h3>Vision</h3>
-            <p>Consolidarnos  como la  academia y agencia digital líder a nivel regional y nacional en
-                enseñanza pre universitaria con alto nivel académico y innovando
-                constantemente nuestro sistema educativo y a la vez ser única en nuestro servicios.</p>
-            <h3>Valores</h3>
-            <p><b>Responsabilidad:</b> Te aseguramos que todos los cursos que están
-                disponibles estarán completos, es decir, que tendrán sus respectivos
-                módulos, exámenes, etc. Además, al momento de publicar un nuevo curso lo
-                avisaremos en nuestras redes o por Gmail.</p>
-            <p><b>Fe:</b> Tenemos una gran confianza en nuestros alumnos, ya que sabemos que
-                su plan de capacitación será exitoso.</p>
-            <p><b>Respeto y Tolerancia:</b> Nosotros siempre estamos al tanto de nuestros
-                usuarios para que se sientan satisfechos, eso incluye un buen servicio,
-                por medio del valor del respeto y la tolerancia.</p>
-        </div>
+    <!--Form for contact woth the company-->
+    <section class="contactMe">
+        <form>
+            <img src="./Media/Logo.png">
+            <h2>Contactanos Aquí</h2>
+            <label id="lblName" for="txtName">Nombre</label>
+            <input id="txtName" type="text" placeholder="Ingrese su nombre" required>
+            <label id="lblLastName" for="txtLastName">Apellido</label>
+            <input id="txtLastName" type="text" placeholder="Ingrese su apellido" required>
+            <label id="lblGmail" for="txtGamil">Correo electronico</label>
+            <input id="txtGmail" type="text" placeholder="Ingrese su correo" required>
+            <label id="lblMessage" for="txtMessage">Mensaje</label>
+            <textarea id="txtMessage" maxlength="300" placeholder="Ingrese un mensaje aquí" required></textarea>
+            <input id="btnSubmit" type="submit" value="Enviar">
+        </form>
     </section>
     <!--Footer-->
     <section class="subfooter">
